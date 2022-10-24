@@ -1,0 +1,112 @@
+\documentclass{book}
+\usepackage{geometry}
+\usepackage[T1]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{palatino}
+\usepackage{lettrine}
+\usepackage{graphicx}
+\usepackage{framed}
+%\usepackage[text=WERSJA\\ROBOCZA,fontsize=0.15\paperwidth]{draftwatermark}
+%\usepackage{hyperref}
+
+\usepackage{tocloft}
+
+\setlength\cftparskip{-2pt}
+\setlength\cftbeforesecskip{5pt}
+\setlength\cftbeforechapskip{1em}
+\setlength\cftbeforepartskip{1em}
+%\setlength\cftaftertoctitleskip{2pt}
+
+\newcommand{\lett}[1]{\lettrine[findent=6pt]{#1}}
+\newcommand{\ssec}[1]{\vspace{1em}\textit{#1}\vspace{.5em}\nopagebreak}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1.15}
+\setcounter{secnumdepth}{0}
+
+\geometry{a5paper,inner=15mm,top=20mm}
+
+
+\begin{document}
+\pagestyle{plain}
+
+\begin{titlepage}
+\begin{center}
+
+Przyjdź Królestwo Twoje!
+
+\vspace*{4cm}
+
+{\LARGE Statuty Federacji Regnum Christi}
+
+{\LARGE Przepisy ogólne Federacji Regnum Christi}
+
+{\LARGE Przepisy wiernych stowarzyszonych\\Federacji Regnum Christi}
+
+
+Tłumaczenie z języka hiszpańskiego
+            
+\vspace*{1cm}
+
+\includegraphics[width=2cm]{rc-logo-bw-712-755}
+
+\vspace*{1cm}
+
+Wersja tłumaczenia\\
+z dnia 5-go kwietnia 2022 r.
+
+\vfill
+
+Rzym, 2019
+            
+\end{center}
+\end{titlepage}
+
+
+\cleardoublepage
+
+\tableofcontents
+\cleardoublepage
+
+
+\section*{Skróty}
+\addcontentsline{toc}{part}{Skróty}
+
+\begin{tabular}{lp{0.7\textwidth}}
+
+CIC & Kodeks prawa kanonicznego, łac. {\em Codex Iuris Canonici} (25 styczeń 1983) \\
+SFRC & Statuty Federacji Regnum Christi (31 maja 2019) \\
+POFRC & Przepisy ogólne Federacji Regnum Christi (17 wrzesień 2019)
+
+\end{tabular}
+
+\cleardoublepage
+\addcontentsline{toc}{part}{Statuty Federacji Regnum Christi}
+
+\input{statuty-frc}
+
+
+\cleardoublepage
+\setcounter{part}{0}
+\setcounter{chapter}{0}
+\addcontentsline{toc}{part}{Przepisy ogólne Federacji Regnum Christi}
+
+\input{przepisy-ogolne}
+
+\cleardoublepage
+\setcounter{part}{0}
+\setcounter{chapter}{0}
+\addcontentsline{toc}{part}{Przepisy wiernych stowarzyszonych Federacji Regnum Christi}
+
+\input{przepisy-wiernych-stowarzyszonych}
+
+\newpage
+\thispagestyle{empty}
+\vspace*{6cm}
+\begin{center}
+Per Regnum Christi ad Gloriam Dei
+
+Przez Królestwo Chrystusa ku Chwale Boga
+\end{center}
+
+\end{document}
