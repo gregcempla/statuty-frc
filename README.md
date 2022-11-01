@@ -2,6 +2,6 @@
 
 Złożone w LaTeXu.
 
-Aby wygenerować plik wyjściowy należy wukonać komendę
+Aby wygenerować plik wyjściowy należy wykonać komendę
 
-  pdflatex statuty-i-przepisy-frc.tex
+    pdflatex statuty-i-przepisy-frc.tex
